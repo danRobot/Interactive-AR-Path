@@ -52,11 +52,13 @@ namespace PathCreation.Examples {
                 //bezierPath.AddSegmentToEnd(pointPos);
                 //Debug.Log(bezierPath.NumAnchorPoints);
                 //closedLoop=!closedLoop;
-                bezierPath=new BezierPath (waypoints,closedLoop,PathSpace.xyz);
-                //GetComponent<PathCreator> ().bezierPath = bezierPath;
-                //bezierPath.MovePoint(0,pointPos);
-                i++;
-                GetComponent<PathCreator> ().bezierPath = bezierPath;
+                if (waypoints.Count > 3) {
+                    bezierPath=new BezierPath (waypoints,closedLoop,PathSpace.xyz);
+                    //GetComponent<PathCreator> ().bezierPath = bezierPath;
+                    //bezierPath.MovePoint(0,pointPos);
+                    i++;
+                    GetComponent<PathCreator> ().bezierPath = bezierPath;
+                }
             }
             if (Input.GetMouseButtonDown(1)){
                 
