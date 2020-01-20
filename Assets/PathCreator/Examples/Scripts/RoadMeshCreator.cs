@@ -10,13 +10,14 @@ namespace PathCreation.Examples {
         [Range (0, .5f)]
         public float thickness = .15f;
         public bool flattenSurface;
+        int numbers;
 
         [Header ("Material settings")]
         public Material roadMaterial;
         public Material undersideMaterial;
         public float textureTiling = 1;
 
-        [SerializeField, HideInInspector]
+        [SerializeField]
         GameObject meshHolder;
 
         MeshFilter meshFilter;
@@ -146,6 +147,9 @@ namespace PathCreation.Examples {
         }
 
         void Update(){
+            //numbers=GameObject.Find("GeneratePathExample").GetComponent<GeneratePathExample>().numbers;
+            //textureTiling=textureTiling*numbers;
+            PathUpdated();
             Debug.Log(Input.mousePosition);
         }
         void AssignMaterials () {

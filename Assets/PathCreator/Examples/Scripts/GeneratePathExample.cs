@@ -16,6 +16,7 @@ namespace PathCreation.Examples {
         Vector3 pointPos;
         RaycastHit hit;
         int i=0;
+        public int numbers;
         void Starte () {
             if (waypoints.Count > 0) {
                 // Create a new bezier path from the waypoints.
@@ -55,9 +56,11 @@ namespace PathCreation.Examples {
                 if (waypoints.Count > 3) {
                     bezierPath=new BezierPath (waypoints,closedLoop,PathSpace.xyz);
                     //GetComponent<PathCreator> ().bezierPath = bezierPath;
-                    //bezierPath.MovePoint(0,pointPos);
+                    //Vector3 ve=new Vector3(0.0f, 0.0f, 0.0f);
+                    //bezierPath.MovePoint(0,ve);
                     i++;
                     GetComponent<PathCreator> ().bezierPath = bezierPath;
+                    numbers=bezierPath.NumAnchorPoints;
                 }
             }
             if (Input.GetMouseButtonDown(1)){
@@ -69,6 +72,7 @@ namespace PathCreation.Examples {
         
         void Start(){
             pointPos=new Vector3(0.0f, 0.0f, 0.0f);
+            
             //GameObject plane  = GameObject.CreatePrimitive(PrimitiveType.Plane);
             Starte();
         }

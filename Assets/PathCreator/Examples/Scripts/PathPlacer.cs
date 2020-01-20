@@ -10,6 +10,14 @@ namespace PathCreation.Examples {
         public GameObject holder;
         public float spacing = 3;
 
+        public float alpha;
+        public float beta;
+        public float gamma;
+
+        public float deltaX;
+        public float deltaY;
+        public float deltaZ;
+
         const float minSpacing = .1f;
 
         void Generate () {
@@ -23,13 +31,20 @@ namespace PathCreation.Examples {
 
                 while (dst < path.length) {
                     Vector3 point = path.GetPointAtDistance (dst);
+                    point.x+=deltaX;
+                    point.y+=deltaY;
+                    point.z+=deltaZ;
                     Quaternion rot = path.GetRotationAtDistance (dst);
+                    rot.eulerAngles+= new Vector3(alpha, beta, gamma);
                     Instantiate (prefab, point, rot, holder.transform);
                     dst += spacing;
                 }
             }
         }
 
+        void Update(){
+            PathUpdated();
+        }
         void DestroyObjects () {
             int numChildren = holder.transform.childCount;
             for (int i = numChildren - 1; i >= 0; i--) {
