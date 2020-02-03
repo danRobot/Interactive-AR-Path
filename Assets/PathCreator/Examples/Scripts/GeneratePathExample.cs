@@ -12,6 +12,7 @@ namespace PathCreation.Examples {
         //public Transform[] waypoints;
         public List<Transform> waypoints = new List<Transform>();
         public Transform myPrefab;
+        public GameObject scene;
         BezierPath bezierPath;
         Vector3 pointPos;
         RaycastHit hit;
@@ -23,6 +24,7 @@ namespace PathCreation.Examples {
                  bezierPath= new BezierPath (waypoints, closedLoop, PathSpace.xyz);
                 GetComponent<PathCreator> ().bezierPath = bezierPath;
             }
+            scene.SetActive(false);
         }
         
         
@@ -61,6 +63,7 @@ namespace PathCreation.Examples {
                     i++;
                     GetComponent<PathCreator> ().bezierPath = bezierPath;
                     numbers=bezierPath.NumAnchorPoints;
+                    scene.SetActive(true);
                 }
             }
             if (Input.GetMouseButtonDown(1)){

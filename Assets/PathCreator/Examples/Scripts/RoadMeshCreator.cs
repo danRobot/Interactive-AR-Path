@@ -26,6 +26,7 @@ namespace PathCreation.Examples {
 
         protected override void PathUpdated () {
             if (pathCreator != null) {
+                meshHolder.SetActive(true);
                 AssignMeshComponents ();
                 AssignMaterials ();
                 CreateRoadMesh ();

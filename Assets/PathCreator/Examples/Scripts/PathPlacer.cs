@@ -10,6 +10,10 @@ namespace PathCreation.Examples {
         public GameObject holder;
         public float spacing = 3;
 
+        public Vector3 scala= new Vector3(0,0,0);
+        public Vector3 orientacion=new Vector3(0,0,0);
+        public Vector3 posicion=new Vector3(0,0,0);
+        /*
         public float alpha;
         public float beta;
         public float gamma;
@@ -17,6 +21,8 @@ namespace PathCreation.Examples {
         public float deltaX;
         public float deltaY;
         public float deltaZ;
+        */
+        
 
         const float minSpacing = .1f;
 
@@ -31,12 +37,17 @@ namespace PathCreation.Examples {
 
                 while (dst < path.length) {
                     Vector3 point = path.GetPointAtDistance (dst);
-                    point.x+=deltaX;
-                    point.y+=deltaY;
-                    point.z+=deltaZ;
+
+                    Vector3 normal=path.GetNormalAtDistance(dst);
+                    Debug.Log(normal);
+                    point.x+=posicion.x;
+                    point.y+=posicion.y;
+                    point.z+=posicion.z;
+                    //point+=posicion;
                     Quaternion rot = path.GetRotationAtDistance (dst);
-                    rot.eulerAngles+= new Vector3(alpha, beta, gamma);
-                    Instantiate (prefab, point, rot, holder.transform);
+                    rot.eulerAngles+=orientacion;
+                    GameObject newObject=Instantiate (prefab, point, rot, holder.transform);
+                    newObject.transform.localScale = scala;
                     dst += spacing;
                 }
             }
