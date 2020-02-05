@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: a86840d5fe295d5f29b2795aa53b2dae
+guid: a4b9b88d7947bc64e83364f8ea7e6c8a
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__8
+    second: {fileID: 2100000, guid: be0d3b001ec526549bb0fb9eb52d5fa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tronco_02Mat
+    second: {fileID: 2100000, guid: be0d3b001ec526549bb0fb9eb52d5fa2, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

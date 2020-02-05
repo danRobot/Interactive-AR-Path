@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 3162d92691913540ba2daec49ccf5ad2
+guid: c9074f68071f8dc459cfb7d4bb7f8a0e
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arbol_04Mat
+    second: {fileID: 2100000, guid: e7143c981cc1358469f545d3d41c30aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__8
+    second: {fileID: 2100000, guid: e7143c981cc1358469f545d3d41c30aa, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

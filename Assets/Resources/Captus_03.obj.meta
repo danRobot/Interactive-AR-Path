@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 9b1521da3d77c8c46a9fd4590b6c085e
+guid: 6395e3435038f4244be8d0655426d70d
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Captus_03Mat
+    second: {fileID: 2100000, guid: 83aa07c9f4cdda744b45dc09b577700c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__8
+    second: {fileID: 2100000, guid: 83aa07c9f4cdda744b45dc09b577700c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

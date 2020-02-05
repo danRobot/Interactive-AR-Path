@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 730491e9b7c415346a0fba0e4fadfae1
+guid: 2d9142cff7ca0ea40a7ebcf700254399
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Contenedor_AguaMat
+    second: {fileID: 2100000, guid: be61b2b9a9475de48b3e3e67f896e4ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__8
+    second: {fileID: 2100000, guid: be61b2b9a9475de48b3e3e67f896e4ce, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

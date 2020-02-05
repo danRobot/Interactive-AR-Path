@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 64b35ddbb6b10d80c88d6d0a900cd0aa
+guid: 3126155138fec154e93cb3cfe62410ec
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CASA_02Mat
+    second: {fileID: 2100000, guid: c827baeeb7ac0fa4e906920ed47b20c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__8
+    second: {fileID: 2100000, guid: c827baeeb7ac0fa4e906920ed47b20c2, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

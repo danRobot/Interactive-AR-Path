@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: e2358636a1d7c0f1196ed85bc9f4935c
+guid: fd15b4ad14a2b644e8c65064dbd3eb5e
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__8
+    second: {fileID: 2100000, guid: 4ce81c2754e98f540b67c57777db7bf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pilon_MaderosMat
+    second: {fileID: 2100000, guid: 4ce81c2754e98f540b67c57777db7bf9, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

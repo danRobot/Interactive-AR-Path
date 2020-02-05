@@ -3,7 +3,12 @@ guid: 45992538a11aded6395604333e8d7225
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Se_al_Transito_01Mat
+    second: {fileID: 2100000, guid: 219a030ff87c87b499b379474751b47b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

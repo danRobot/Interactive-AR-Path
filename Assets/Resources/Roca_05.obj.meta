@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 1287aa583a7ef8b68a10a4b4e2cb5c54
+guid: 57c4c130779aca84c9ab967973e8cbcb
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roca_05Mat
+    second: {fileID: 2100000, guid: 976801b752d283f49908416bae531870, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rocas
+    second: {fileID: 2100000, guid: 976801b752d283f49908416bae531870, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

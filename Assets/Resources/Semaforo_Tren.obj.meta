@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 3021e9febcfc61fbfa45fe3c5eba580c
+guid: 12ce8498b98e1564990869d5268912ee
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__8
+    second: {fileID: 2100000, guid: cf9571b4bafe7ef4fae7c9b94c62657a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Semaforo_TrenMat
+    second: {fileID: 2100000, guid: cf9571b4bafe7ef4fae7c9b94c62657a, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -87,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0
