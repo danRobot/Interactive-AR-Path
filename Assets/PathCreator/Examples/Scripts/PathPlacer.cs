@@ -13,6 +13,9 @@ namespace PathCreation.Examples {
         public Vector3 scala= new Vector3(0,0,0);
         public Vector3 orientacion=new Vector3(0,0,0);
         public Vector3 posicion=new Vector3(0,0,0);
+        Vector3 point;
+        Vector3 normal;
+        Vector3 direction;
         /*
         public float alpha;
         public float beta;
@@ -36,13 +39,14 @@ namespace PathCreation.Examples {
                 float dst = 0;
 
                 while (dst < path.length) {
-                    Vector3 point = path.GetPointAtDistance (dst);
+                    point = path.GetPointAtDistance (dst);
 
-                    Vector3 normal=path.GetNormalAtDistance(dst);
+                    normal=path.GetNormalAtDistance(dst);
+                    direction=path.GetDirectionAtDistance(dst);
                     Debug.Log(normal);
-                    point.x+=posicion.x;
-                    point.y+=posicion.y;
-                    point.z+=posicion.z;
+                    point.x+=normal.x*posicion.z+direction.x*posicion.y;
+                    point.y+=normal.y*posicion.z+direction.y*posicion.y;
+                    point.z+=normal.z*posicion.z+direction.z*posicion.y;
                     //point+=posicion;
                     Quaternion rot = path.GetRotationAtDistance (dst);
                     rot.eulerAngles+=orientacion;
